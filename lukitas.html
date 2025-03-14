@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            font-size: 50px;
+        }
+
+        button {
+            background-color: aqua;
+            color: black;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(192, 30, 170);
+            color: rgb(129, 10, 10);
+
+        }
+    </style>
+
+
+    <h1>Digita seu nome ai carniça</h1>
+    <input type="text" id="txt">
     <div id="res"></div>
 
-
+    <button id="btn">NÃO CLICA AQUI</button>
 
     <script>
-        const nome = prompt("Digita seu nome ai carniça");
 
-        const resultado = document.querySelector("#res");
 
-        if (nome == "Lucas" || nome == "lucas") {
-            resultado.innerHTML = `${nome} coe seu boti cabassssssssss`
-        } else {
-            resultado.innerHTML = `Seu nomi é ${nome}`
-        }
+        const btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", () => {
+            const nome = document.querySelector("#txt").value;
+
+            const resultado = document.querySelector("#res");
+
+            if (!nome) {
+                alert("COLOCA UM NOME PORRA")
+            } else if (nome == "Lucas" || nome == "lucas") {
+                resultado.innerHTML = `${nome} coe seu boti cabassssssssss`
+            } else {
+                resultado.innerHTML = `Seu nomi é <u>${nome}</u>`
+            }
+
+        });
     </script>
 </body>
+
 </html>
