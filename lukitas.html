@@ -6,8 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <p>oie</p>
-    </div>
+    <div id="res"></div>
+
+
+
+    <script>
+        const nome = prompt("Digita seu nome ai carniça");
+
+        const resultado = document.querySelector("#res");
+
+        if (nome == "Lucas" || nome == "lucas") {
+            resultado.innerHTML = `${nome} coe seu boti cabassssssssss`
+        } else {
+            resultado.innerHTML = `Seu nomi é ${nome}`
+        }
+    </script>
 </body>
 </html>
