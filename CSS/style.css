@@ -13,4 +13,10 @@ body {
 
 #p1 {
     font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
 }
