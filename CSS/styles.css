@@ -24,6 +24,7 @@ ul li a{
     color: rgb(146, 3, 34);
     text-decoration: none;
     transition: 0.5s;
+    margin-right: 12px;
 }
 
 ul li a:hover {
